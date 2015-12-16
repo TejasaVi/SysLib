@@ -110,7 +110,8 @@ int is_dir_modified(event_t *e)
 			}
 			else {;
 				//new File added
-			}	return 2;
+				return 2;
+			}
 		}
 		else if (event->mask & IN_DELETE ) {
 			if (event->mask & IN_ISDIR )  {
